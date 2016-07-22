@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbYhrNaPs0oPJiHDqGRR8PyNl4oYN25z0"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <button type="button" id="delete_data">Remove All data</button>
+
+    <div id="geotable">
+        <table id="maptable">
+            <thead>
+            <tr>
+                <th>Address</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <link rel="stylesheet" href="{% static 'css/app.css' %}"/>
+    <script src="{% static 'js/app2.js' %}"></script>
+</body>
+</html>
