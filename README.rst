@@ -1,0 +1,7 @@
+Readme
+------------
+0. How to run
+virtualenv .ve && pip install -r requirements.txt && ./manage.py migrate && ./manage.py runserver
+
+1. URL to Google fusion DB:
+https://www.google.com/fusiontables/data?docid=15jQJZ3ZC7LtI9ZtU2r1epPObVyyMnhYngemTG3if#rows:id=1
