@@ -35,7 +35,8 @@ class LocationPointList(APIView):
             except FTDataException as e:
                 logger.error('Google Fusion Table Error %s', e)
                 return response.Response(serializer.data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-            return response.Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                return response.Response(serializer.data, status=status.HTTP_201_CREATED)
         return response.Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request):
